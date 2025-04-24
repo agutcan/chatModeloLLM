@@ -2,8 +2,8 @@
 
 Este proyecto permite la interacción con un modelo de lenguaje (IA) local a través de una API basada en **FastAPI**. La aplicación está dividida en dos carpetas principales:
 
-- **api**: Contiene el servidor de la API que expone el endpoint para interactuar con el modelo de IA.
-- **api/app**: Contiene el script cliente que se conecta con la API y permite al usuario interactuar con el modelo.
+- **app**: Contiene el servidor de que expone el endpoint para interactuar con el modelo de IA.
+- **script/**: Contiene el script cliente que se conecta con la API y permite al usuario interactuar con el modelo.
 
 ## Estructura del Proyecto
 ```bash
