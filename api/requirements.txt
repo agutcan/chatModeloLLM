@@ -1,0 +1,15 @@
+fastapi
+httpx
+itsdangerous
+uvicorn
+bs4
+requests
+frontend
+tools
+python-docx
+jinja2
+python-multipart
+pymupdf
+python-pptx
+openpyxl
+easyocr
