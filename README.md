@@ -19,13 +19,13 @@ Este proyecto permite la interacción con un modelo de lenguaje (IA) local a tra
 ```
 ## Descripción
 
-### API (Carpeta `api`)
+### APP
 
-La carpeta `api` contiene el servidor **FastAPI** que expone un endpoint para interactuar con un modelo de IA local de forma local y via interfaz web. El modelo es accesible a través de un endpoint POST que recibe un **prompt** y, opcionalmente, un archivo, y devuelve una respuesta generada por el modelo.
+El archivo app.py contiene el servidor **FastAPI** que expone un endpoint para interactuar con un modelo de IA local de forma local y via interfaz web. El modelo es accesible a través de un endpoint POST que recibe un **prompt** y, opcionalmente, un archivo, y devuelve una respuesta generada por el modelo.
 
 Tiene un historial de hasta 4 mensajes.
 
-#### Archivos principales en la carpeta `api`:
+#### Archivos principales:
 
 - **app.py**: Contiene la definición del servidor FastAPI, incluyendo los endpoints para cargar archivos y generar respuestas con el modelo de IA.
 - **requirements.txt**: Lista las dependencias necesarias para ejecutar la API, como `fastapi`, `uvicorn`, y otras librerías para procesamiento de documentos y generación de texto.
@@ -36,13 +36,13 @@ Tiene un historial de hasta 4 mensajes.
 #### Archivos principales en la carpeta `script`:
 
 - **script.py**: Es el script que se ejecuta para interactuar con la API, enviar solicitudes de generación de texto y mostrar las respuestas generadas.
-- **requirements.txt**: Lista las dependencias necesarias para ejecutar el script cliente.
+- **requirements.txt**: Lista las dependencias necesarias para ejecutar el script cliente, por si tienes el servidor activo en otra maquina y solo quieres usar el script.
 
 ## Instrucciones de Uso
 
-### 1. Configuración del Entorno (Puedes saltarte este paso si solo quieres usar la app "script")
+### 1. Configuración del Entorno (Puedes saltarte este paso si solo quieres usar el `script`)
 
-Para comenzar a usar el proyecto, debes instalar las dependencias necesarias tanto para la API como para el script cliente.
+Para comenzar a usar el proyecto, debes instalar las dependencias necesarias tanto para la APP.
 
 También debes instalar un modelo de IA:
 1. Primero debes instalar [Ollama](https://ollama.com/).
@@ -56,16 +56,16 @@ ollama run gemma3:12b
 ```
 Finalmente puedes utilizar la IA de manera local. Para dejar de usarlar pon `/bye` o Ctrl + d.
 
-#### Para la API: (Puedes saltarte este paso si solo quieres usar la app "script")
+#### Para la APP: (Puedes saltarte este paso si solo quieres usar el `script`)
 
 1. Tener instalado ollama con el modelo que se este usando, en este caso llama3.
 2.  Clona el repositorio:
     ```bash
-    git clone git@github.com:agutcan/modeloIA.git
+    git clone git@github.com:agutcan/chatModeloLLM.git
     ```
-3. Navega a la carpeta `modeloIA/api/`:
+3. Navega a la carpeta `chatModeloLLM/`:
    ```bash
-   cd api
+   cd chatModeloLLM
    ``` 
 4. Crea un entorno virtual:
    ```bash
@@ -118,11 +118,11 @@ Finalmente puedes utilizar la IA de manera local. Para dejar de usarlar pon `/by
 
 1. Clona el repositorio:
     ```bash
-    git clone git@github.com:agutcan/modeloIA.git
+    git clone git@github.com:agutcan/chatModeloLLM.git
     ```
-2. Navega a la carpeta `modeloIA/api/app/`:
+2. Navega a la carpeta `chatModeloLLM/script/`:
    ```bash
-   cd modeloIA/api/app/
+   cd chatModeloLLM/script/
    ``` 
 3. Crea un entorno virtual:
    ```bash
@@ -146,7 +146,7 @@ Finalmente puedes utilizar la IA de manera local. Para dejar de usarlar pon `/by
    ```
 8. Ejecuta el script:
     ```bash
-   python usarapi.py
+   python script.py
    ```
 9. Ejemplo de uso:
    ```bash
