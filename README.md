@@ -7,15 +7,14 @@ Este proyecto permite la interacción con un modelo de lenguaje (IA) local a tra
 
 ## Estructura del Proyecto
 ```bash
-├── api/ # Carpeta con la API que maneja el modelo de IA 
-│ ├── app.py # Servidor FastAPI 
-│ ├── requirements.txt # Dependencias para la API 
-│ ├── templates/ # Plantillas HTML (si es necesario) 
-│ ├── static/ # Archivos estáticos (CSS, JS, imágenes) 
-│ ├── ... # Otros archivos relacionados con la API 
-│ ├── script/ # Carpeta con el script cliente 
-│ ├── script.py # Script que interactúa con la API 
-│ └── requirements.txt # Dependencias del script 
+├── app.py # Servidor FastAPI 
+├── requirements.txt # Dependencias para la API 
+├── templates/ # Plantillas HTML (si es necesario) 
+├── static/ # Archivos estáticos (CSS, JS, imágenes) 
+├── ... # Otros archivos relacionados con la API 
+├── script/ # Carpeta con el script cliente 
+├── script.py # Script que interactúa con la API 
+├── requirements.txt # Dependencias del script 
 └── README.md # Este archivo
 ```
 ## Descripción
